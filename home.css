@@ -1,0 +1,344 @@
+body{
+    margin: 0;
+    background-image: url("back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1px;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color:rgba(255,255,255,0.3);
+    box-shadow: 52px 30px 14px grey;
+    width: 90%;
+    height:auto;
+    margin:0 auto 30px;  
+    display: flex; 
+    flex-direction: row;
+}
+.details{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    margin: 10px 0 15px 10px;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 100px;
+    width:100px;
+    vertical-align: middle;
+}
+.logo h1{
+    font-size: 2.2rem;
+    padding: 0 10px 10px;
+    font-family: 'Kiwi Maru', serif;
+    font-weight: 600;
+    color: #06498e;
+    border-bottom: 2px solid grey;
+}
+.display h2{
+    font-size: 1.5rem;
+    margin-left: 60px;
+    font-weight: 600;
+    font-family: 'Kiwi Maru', serif;
+    color: #c77a09;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+    margin:10px 60px;
+}
+.list{
+    list-style: none;
+}
+
+.list i{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: #0033a7;
+}
+.list span{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    font-weight: lighter;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.details .btn{
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 8px 20px;
+    margin:10px 0 0;
+    height: auto;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 5px rgb(71,70,68,0.5);
+    background-color: rgb(250 158 23);
+    color: white;
+    transition: background-color 0.5s ,transform 0.5s;
+    cursor: pointer;
+}
+.details .btn:hover{
+    background-color: rgb(250, 188, 65);
+    transform: scale(1.1);
+}
+#rightside{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:50%;
+}
+#rightside .navigation{
+    height: auto;
+    width: 100%;
+}
+
+#rightside .navbar .navlist{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+}
+#rightside .navbar .navlist li{
+    list-style: none;
+}
+#rightside .navbar{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#rightside .navbar .navlist li button{
+    list-style: none;
+    border:0;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    color: #c77a09;
+    transition: border-radius 0.5s,background-color 0.5s,transform 0.3s;
+    cursor: pointer;
+}
+#rightside .navlist li button:hover{
+    background-color:rgb(250, 188, 65);
+    color: white;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+#rightside #image{
+    display: block;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+#rightside #image img{
+    height: 100%;
+    width: 100%;
+}
+
+#rightside #containertable, #rightside #transfertable{
+     border-collapse: collapse;
+     width: 90%;
+     height: auto;
+     display: none;
+     font-size: 0.9rem;
+     overflow-y: scroll;
+    scroll-behavior: smooth;
+     margin: auto;
+     border-radius: 5px 5px 0 0;
+     box-shadow: 0 0 20px rgba(0,0,0,0.50);
+ }
+ #rightside #transfertable{
+     width:75%;
+ }
+ #rightside #containertable thead tr, #rightside #transfertable thead tr{
+     background-color: orange;
+     color: white;
+     font-weight: bold;
+     text-align: left;
+ }
+ #rightside #containertable th,
+ #rightside #containertable td,
+ #rightside #transfertable th,
+ #rightside #transfertable td{
+     border-bottom: 1px solid #dddddd;
+     padding: 12px 15px ;
+ }
+ #rightside tbody tr{
+     background-color: white;
+     transition: box-shadow 0.3s, tranform 0.5s;
+    }
+    #rightside tbody tr:nth-child(even){
+       background-color: #e5e2e2;
+    }
+ #rightside tbody tr:hover{
+     font-weight: 600;
+     color: orange;
+     box-shadow: 0 0 20px rgba(0,0,0,0.30);
+     transform: scaleX(1.02);
+ }
+footer{
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    left: 0;
+    line-height: 10px;
+    background-color: rgba(0,0,0,0.7);
+}
+footer p{
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color: white;
+}
+.icon{
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+.icon a{
+    color:inherit;
+}
+.icon i{
+    margin: 5px 5px 10px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.icon i:hover{
+    transform:scale(1.1);
+}
+
+/* Transfer form css */
+
+#card{
+    border: 0px solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.50);
+    width: 75%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+   
+}
+#card h3{
+ border-bottom: 2px solid rgba(0,0,0,0.3);
+    text-align: center;
+    color: orange;
+    font-weight: bolder;
+    font-family: serif;
+    font-size: 1.5rem;
+}
+#card h3:hover{
+    transform: scaleX(1.02);
+}
+#card form{
+    display: flex;
+    flex-direction: column;
+}
+#card form input{
+ margin: 5px 10px;
+ padding: 10px;
+ padding-left: 15px;
+ margin: 5px;
+ border: 0px solid gray;
+ box-shadow: 0px 0px 2px  rgba(0,0,0,0.30);
+}
+
+#card form input:hover,
+#card form label:active{
+         
+         border: 2px solid orange;
+         
+}
+#card form button{
+    background-color: orange;
+    color: white;
+    border: 0px;
+    font-size: 0.9rem;
+     background-color: orange;
+     color: white;
+     height: 30px;
+     width: 50%;
+     margin: auto;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: transform 0.5s, font-size 0.5s;
+}
+#card form button:hover{
+    background-color: rgb(255, 195, 82);
+    transform: scaleX(1.02);
+    font-size: 1.1rem;
+
+}
+.heading{
+    text-align: center;
+}
+
+#bk{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    color: rgb(0,0,0);
+    font-size: 1rem;
+}
+#bk:hover{
+    background-color: grey;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
+
+
+                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
